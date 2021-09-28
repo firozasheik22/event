@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+.container {
+  display: grid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: auto;
+  background-color: #61A5C2;
+  grid-template-columns: 1fr;
+  gap: 0 10px;
+}
+.container .date-container {
+  display: block;
+  font-family: arial;
+  margin: 10px;
+}
+.container .date-container .event-dates {
+  
+  font-family: 'Fira Sans', sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px 0;
+  padding: 10px;
+}
+.container .date-container .event-dates span {
+  display: none;
+}
+.container .date-container .event-dates a {
+  border: 3px solid #2C7DA0;
+  text-decoration: none;
+  color: #031522;
+  font-weight: 550;
+  width: 60px;
+  height: 60px;
+  background-color: #deebeb;
+  border-radius: 3px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .date-container .event-dates a:hover {
+  background-color: #2A6F97;
+  color: #fff;
+}
+.container .events-container {
+  display: block;
+}
+.container .events-container .timings {
+  display: none;
+}
+.container .events-container #limits {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.yellow {
+  --theme-bg: #013A63;
+}
+
+.event {
+  
+  box-shadow: 0 15px 30px -10px rgba(140, 166, 223, 0.5) inset;
+  border-left: 10px solid var(--theme-bg);
+  box-sizing: border-box;
+  background-color: #e6eef7;
+  padding: 10px;
+  text-align: center;
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
+.event .eventHref {
+  color: #013A63;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.event .modal {
+  display: none;
+  background-color: #c9e1e9;
+  width: 100%;
+  margin: 10px auto;
+}
+.event .modal .modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.event .modal .modal-content a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #013A63;
+  padding: 5px;
+  border-radius: 3px;
+  width: 100px;
+  margin: 5px;
+}
+
+.event .modal .modal-content p {
+  margin: 2px !important;
+}
+
+
+
+.event:hover .modal {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 95vw;
+    height: auto;
+    margin: auto;
+    padding: 10px 0;
+  }.container .date-container {
+    display: block;
+    font-family: arial;
+    margin: 10px;
+  }
+  .container .date-container .event-dates {
+    
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px 0;
+    padding: 10px;
+  }
+  .container .date-container .event-dates span {
+    display: none;
+  }
+  .container .date-container .event-dates a {
+    border: 3px solid #2C7DA0;
+    text-decoration: none;
+    color: #031522;
+    font-weight: 550;
+    width: 60px;
+    height: 60px;
+    background-color: #deebeb;
+    border-radius: 3px;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .date-container .event-dates a:hover {
+    background-color: #2A6F97;
+    color: #fff;
+  }
+  .container .events-container {
+    display: block;
+  }
+  .container .events-container .timings {
+    display: none;
+  }
+  .container .events-container #limits {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  
+  .yellow {
+    --theme-bg: #013A63;
+  }
+  
+  .event {
+    
+    box-shadow: 0 15px 30px -10px rgba(140, 166, 223, 0.5) inset;
+    border-left: 10px solid var(--theme-bg);
+    box-sizing: border-box;
+    background-color: #e6eef7;
+    padding: 10px;
+    text-align: center;
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+  }
+  .event .eventHref {
+    color: #013A63;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  
+  .event .modal {
+    display: none;
+    background-color: #c9e1e9;
+    width: 100%;
+    margin: 10px auto;
+  }
+  .event .modal .modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .event .modal .modal-content a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #013A63;
+    padding: 5px;
+    border-radius: 3px;
+    width: 100px;
+    margin: 5px;
+  }
+  
+  .event .modal .modal-content p {
+    margin: 2px !important;
+  }
+  
+  
+  
+  .event:hover .modal {
+    display: block;
+  }
+  
+
+  .grid-container {
+    display: grid;
+    width: 100%;
+    height: 2vh;
+    top: -3vh;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+  
+  }
+  .holes {
+    display: grid;
+    top: -4%;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    grid-gap: 10px;
+  }
+  .holes .hole {
+    background-color: #013A63;
+    width: 2%;
+    margin-left:35%;
+    height: 60%;
+    top: -1%;
+    text-align: center;
+    border-radius: 50%;
+    /*display: inline-block;*/
+    /*margin-left: 2.2rem;*/
+    box-shadow: inset 0.2vw 0.2vw 1vw 0 rgb(0 0 0 / 27%);
+  }
+  .grid-container .ring  {
+    margin-left:35%;
+    width: 10% !important;
+    text-align: center;
+    height: 100% !important;
+    /*display: inline-block;*/
+    background-color: #A9D6E5;
+    /*margin-left: 2.2rem;*/
+    border-radius: 35%;
+    box-shadow: 0.3vw 0 0.5vw -0.2vw rgb(0 0 0 / 27%);
+  }
+  
+
+}
+
+/*# sourceMappingURL=style.css.map */
+
+
+
+/* rings */
+
+
+.calender_header{
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+.calendar__picture{
+  height: 100PX;
+  
+  background-image: url('IEEE-Day-2019-FB-Cover820x360-400x176.jpg');
+}
+
+.grid-container {
+  display: grid;
+  width: 100%;
+  height: 2vh;
+  top: -3vh;
+  align-content: space-evenly;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+
+}
+.holes {
+  display: grid;
+  top: -4%;
+  align-content: space-evenly;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  grid-gap: 10px;
+}
+.holes .hole {
+  background-color: #013A63;
+  width: 2%;
+  height: 60%;
+  top: -1%;
+  margin-left:35%;
+  text-align: center;
+  border-radius: 50%;
+  /*display: inline-block;*/
+  /*margin-left: 2.2rem;*/
+  box-shadow: inset 0.2vw 0.2vw 1vw 0 rgb(0 0 0 / 27%);
+}
+.grid-container .ring  {
+  margin-left:35%;
+  width: 10% !important;
+  text-align: center;
+  height: 100% !important;
+  /*display: inline-block;*/
+  background-color: #A9D6E5;
+  /*margin-left: 2.2rem;*/
+  border-radius: 35%;
+  box-shadow: 0.3vw 0 0.5vw -0.2vw rgb(0 0 0 / 27%);
+}
+
+
+/*
+.grid-container {
+  display: grid;
+  height: 400px;
+  align-content: space-evenly;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+*/

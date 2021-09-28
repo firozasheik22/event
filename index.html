@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section id="calender">
+  <div class="container">
+      <div class="grid-container">
+        <div class="ring"><p>  </p></div>
+        <div class="ring" ></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+      <div class="holes">
+        <div class="hole"><p>  </p></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+      </div>
+      <div class="calendar__picture"> 
+        <h3 class="calender_header">October, 2021</h3>
+      </div>
+    <div class="date-container">
+      <div class="event-dates">
+        <span>Dates/Timing</span>
+        <a href="#" onclick="switchDays(1)">10 Oct</a>
+        <a href="#" onclick="switchDays(2)">11 Oct</a>
+        <a href="#" onclick="switchDays(3)">12 Oct</a>
+        <a href="#" onclick="switchDays(4)">13 Oct</a>
+        <a href="#" onclick="switchDays(5)">14 Oct</a>
+        <a href="#" onclick="switchDays(6)">15 Oct</a>
+        <a href="#" onclick="switchDays(7)">16 Oct</a>
+        <a href="#" onclick="switchDays(8)">17 Oct</a>
+        <a href="#" onclick="switchDays(9)">18 Oct</a>
+        <a href="#" onclick="switchDays(10)">19 Oct</a>
+        <a href="#" onclick="switchDays(11)">20 Oct</a>
+      </div>
+    </div>
+    <div class="events-container">
+      <div class="timings">
+        <span id = "16:00">16:00</span>
+        <span id = "16:30">16:30</span>
+        <span id = "17:00">17:00</span>
+        <span id = "17:30">17:30</span>
+        <span id ="18:00">18:00</span>
+        <span id ="18:30">18:30</span>
+        <span id ="19:00">19:00</span>
+        <span id ="19:30">19:30</span>
+      </div>
+      <div id ="limits" class="tracks yellow"></div>
+    </div>
+  </div>
+
+<!--
+  <div class="grid-container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>  
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>  
+  </div>
+-->
+  <script src="script.js"></script>
+  </section>
+</body>
+</html>
